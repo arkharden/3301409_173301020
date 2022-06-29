@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "570916285831",
+    "project_id": "gamecritic-599ee",
+    "storage_bucket": "gamecritic-599ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570916285831:android:ff73750f5175adb9f03722",
+        "android_client_info": {
+          "package_name": "com.example.gamecritic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570916285831-llvtg0bt1gfqce0o6kclonh0fvcgiouq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQWvtuvkucTWIPM6Ra1gLVqNsu6OrqtqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570916285831-llvtg0bt1gfqce0o6kclonh0fvcgiouq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
