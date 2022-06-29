@@ -28,10 +28,17 @@ class Witcher3 extends StatelessWidget {
                 ),
                 Container(
                   width: double.infinity,
-                  height: 230.0,
+                  height: 400.0,
                   child: ListView(
                       scrollDirection: Axis.vertical,
                       children: <Widget>[
+                        SizedBox(height: 25,),
+                        Image(image: NetworkImage(
+                            "https://steamuserimages-a.akamaihd.net/ugc/955227220413855705/181BFD92E6E73EED9C732D60F73B182B3858B2DC/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
+                        ),
+                            height: 150),
+                        SizedBox(height: 25,),
+
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 20.0),
                           child: Text(

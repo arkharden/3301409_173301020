@@ -28,10 +28,16 @@ class Horizon extends StatelessWidget {
                 ),
                 Container(
                   width: double.infinity,
-                  height: 230.0,
+                  height: 400.0,
                   child: ListView(
                       scrollDirection: Axis.vertical,
                       children: <Widget>[
+                        SizedBox(height: 25,),
+                        Image(image: NetworkImage(
+                            "https://i.pinimg.com/originals/60/b5/5a/60b55a753ef5f38d3861da18f0e027ff.gif"
+                        ),
+                            height: 150),
+                        SizedBox(height: 25,),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 20.0),
                           child: Text(

@@ -24,14 +24,20 @@ class DyingLight extends StatelessWidget {
                   radius: 120.0,
                 ),
                 SizedBox(
-                  height: 12.0,
+                  height: 20.0,
                 ),
                 Container(
                   width: double.infinity,
-                  height: 230.0,
+                  height: 400.0,
                   child: ListView(
                       scrollDirection: Axis.vertical,
                       children: <Widget>[
+                        SizedBox(height: 25,),
+                        Image(image: NetworkImage(
+                            "https://media3.giphy.com/media/TgT0Z4TGPA9CuerYiA/giphy.gif"
+                        ),
+                            height: 150),
+                        SizedBox(height: 25,),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 20.0),
                           child: Text(
@@ -41,6 +47,7 @@ class DyingLight extends StatelessWidget {
                               fontSize: 20,
                             ),
                           ),
+
                         ),
                       ]),
                 ),

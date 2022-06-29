@@ -28,10 +28,16 @@ class Pokemon extends StatelessWidget {
                 ),
                 Container(
                   width: double.infinity,
-                  height: 230.0,
+                  height: 400.0,
                   child: ListView(
                       scrollDirection: Axis.vertical,
                       children: <Widget>[
+                        SizedBox(height: 25,),
+                        Image(image: NetworkImage(
+                            "https://pa1.narvii.com/6224/bb3c5fc457fce0334a1671ae6ff1d34620e9c77f_hq.gif"
+                        ),
+                            height: 150),
+                        SizedBox(height: 25,),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 20.0),
                           child: Text(

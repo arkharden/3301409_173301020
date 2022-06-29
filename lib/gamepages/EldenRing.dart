@@ -11,10 +11,11 @@ class EldenRing extends StatelessWidget {
           backgroundColor: Color(0xff1C262F),
         ),
         backgroundColor: Color(0xff1C262F),
-        body: SafeArea(
-          child: Center(
+        body: SingleChildScrollView(
+          child: SafeArea(
             child: Column(
-              children: <Widget>[
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
                 SizedBox(
                   height: 12.0,
                 ),
@@ -26,12 +27,20 @@ class EldenRing extends StatelessWidget {
                 SizedBox(
                   height: 12.0,
                 ),
+
                 Container(
                   width: double.infinity,
-                  height: 230.0,
+                  height: 400.0,
                   child: ListView(
                       scrollDirection: Axis.vertical,
                       children: <Widget>[
+
+                        SizedBox(height: 25,),
+                        Image(image: NetworkImage(
+                            "https://c.tenor.com/JNs4bZFrILgAAAAC/elden-ring.gif"
+                        ),
+                            height: 150),
+                        SizedBox(height: 25,),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 20.0),
                           child: Text(
@@ -42,6 +51,7 @@ class EldenRing extends StatelessWidget {
                             ),
                           ),
                         ),
+
                       ]),
                 ),
               ],
@@ -50,3 +60,4 @@ class EldenRing extends StatelessWidget {
         ));
   }
 }
+

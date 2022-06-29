@@ -28,10 +28,16 @@ class TombRaider extends StatelessWidget {
                 ),
                 Container(
                   width: double.infinity,
-                  height: 230.0,
+                  height: 400.0,
                   child: ListView(
                       scrollDirection: Axis.vertical,
                       children: <Widget>[
+                        SizedBox(height: 25,),
+                        Image(image: NetworkImage(
+                            "https://c.tenor.com/bMKf-2ExTDQAAAAC/tomb-raider-tomb-raider-gifs.gif"
+                        ),
+                            height: 150),
+                        SizedBox(height: 25,),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 20.0),
                           child: Text(
