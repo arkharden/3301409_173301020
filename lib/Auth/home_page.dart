@@ -31,7 +31,7 @@ class OyunKritik extends StatefulWidget {
 
 void getHttp() async {
   try {
-    var response = await Dio().get('http://www.google.com');
+    var response = await Dio().get('my-json-server.typicode.com/arkharden/3301409_173301020/posts/1');
     print(response);
   } catch (e) {
     print(e);
@@ -84,7 +84,7 @@ class _OyunKritikState extends State<OyunKritik> {
                 icon: new Icon(Icons.exit_to_app_rounded, size: 30)),
             IconButton(
               onPressed: () {
-                //do something
+                getHttp();
               },
               icon: Icon(Icons.person),
             )
@@ -134,6 +134,8 @@ class _OyunKritikState extends State<OyunKritik> {
                       padding: const EdgeInsets.symmetric(horizontal: 25.0),
                       child: GestureDetector(
                         onTap: () {
+                          getHttp();
+                          /*
                           Navigator.push(
                             context,
                             MaterialPageRoute(
@@ -141,7 +143,7 @@ class _OyunKritikState extends State<OyunKritik> {
                                 return OyunKritik();
                               },
                             ),
-                          );
+                          ); */
                         },
                         child: Text(
                           'Giriş Yap',
