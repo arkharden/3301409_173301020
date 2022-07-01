@@ -1,0 +1,14 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "hello"
+    }
+  ],
+  "profile": {
+    "name": "derya",
+    "surname":"yildirim",
+    "age": "41",
+    "email": "de.yil@hotmail.com"
+  }
+}

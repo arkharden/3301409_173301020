@@ -21,21 +21,22 @@ void main() async {
   runApp(OyunKritik());
 }
 
+void getHttp() async {
+  try {
+    var response = await Dio()
+        .get('my-json-server.typicode.com/arkharden/3301409_173301020/posts/1');
+    print(response);
+  } catch (e) {
+    print(e);
+  }
+}
+
 class OyunKritik extends StatefulWidget {
   const OyunKritik({Key? key}) : super(key: key);
 
   @override
   _OyunKritikState createState() => _OyunKritikState();
 // Widget build(BuildContext context)
-}
-
-void getHttp() async {
-  try {
-    var response = await Dio().get('my-json-server.typicode.com/arkharden/3301409_173301020/posts/1');
-    print(response);
-  } catch (e) {
-    print(e);
-  }
 }
 
 class _OyunKritikState extends State<OyunKritik> {
@@ -51,11 +52,11 @@ class _OyunKritikState extends State<OyunKritik> {
           (snapshot) => snapshot.docs.forEach((document) {
             print(document.reference);
             docIDs.add(document.reference.id);
-
           }),
         );
- }
- @override
+  }
+
+  @override
   void initState() {
     getDocID();
     super.initState();
@@ -129,50 +130,6 @@ class _OyunKritikState extends State<OyunKritik> {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
-
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                      child: GestureDetector(
-                        onTap: () {
-                          getHttp();
-                          /*
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) {
-                                return OyunKritik();
-                              },
-                            ),
-                          ); */
-                        },
-                        child: Text(
-                          'Giriş Yap',
-                          style: TextStyle(
-                            color: Colors.orange,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: 12.0),
                       child: Chip(
