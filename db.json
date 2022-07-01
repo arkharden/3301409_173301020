@@ -1,0 +1,15 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "ilk kisi"
+    }
+  ],
+  "profile": {
+    "name": "derya",
+    "surname":"yildirim",
+    "age": "41",
+    "email": "de.yil@hotmail.com",
+    "password": "derya1"
+  }
+}
