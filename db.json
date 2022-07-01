@@ -2,13 +2,9 @@
   "posts": [
     {
       "id": 1,
-      "title": "hello"
+      "name": "derya",
+      "surname":"yildirim",
+      "age": "41",
+      "email": "de.yil@hotmail.com"
     }
   ],
-  "profile": {
-    "name": "derya",
-    "surname":"yildirim",
-    "age": "41",
-    "email": "de.yil@hotmail.com"
-  }
-}
